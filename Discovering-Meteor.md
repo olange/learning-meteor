@@ -3,22 +3,22 @@
 ### Somes basic facts
 
 * [MIT License](http://opensource.org/licenses/MIT) (originally released with GPL License)
-* _Meteorite package system_ (TODO)
-* _Module dependencies?_ (TODO)
+* _Meteorite package system_ 
+* _Module dependencies?_ 
 * _i18n?_ traductions des interfaces, formatage des nombres et dates: quelques modules basiques, mais pas sûr qu'ils fassent les dates (https://github.com/jerico-dev/meteor-i18n, https://github.com/subhog/meteor-just-i18n)
-* _Deployment?_ (TODO) « _easy to create and deploy a Meteor app to their hosting service, but much harder to use Meteor as a module of a more traditional Node.js server._ » Nath Smith/DerbyJS, 14.08.2012
+* _Deployment?_ « _easy to create and deploy a Meteor app to their hosting service, but much harder to use Meteor as a module of a more traditional Node.js server._ » Nath Smith/DerbyJS, 14.08.2012
 * _Datastore_ MongoDB principalement, dont ils exploitent le mécanisme spécifique d'_Op Log Tailing_ pour propager les changements rapidement; ils utilisaient plus tôt un mécanisme de _database diff-and-polling_, plus générique à mon avis, mais qui imposait un délai de 10-15 sec. avant propagation des changements dans le datastore; très orientés _object store_ avec documents semi-structurés; dénormalisation des données et modèle dicté par l'usage (qui peut différer des recommendations de modélisation de MongoDB même d'après ce que j'ai compris); en conclusion: Meteor fonctionne au mieux avec MongoDB à ce stade, il faut le prendre comme un donné
 * _Propagation of changes?_ LiveMongo Database Polling (writes to the database, and polls it frequently for the data in use by every connected client)
-* _Server static rendering_? (TODO)
+* _Server static rendering_?
 * _Indexable by search engines?_ seems to, using the _Spiderable_ package
-* _Static URI space?_ (TODO)
-* _Firing of the onload event?_ (TODO)
-* _Templating? two-way data bindings?_ (TODO)
-* _Support for working offline?_ (TODO) important
+* _Static URI space?_
+* _Firing of the onload event?_
+* _Templating? two-way data bindings?_ 
+* _Support for working offline?_ important
 * Synchronous server Node.js code with [Fibers](https://github.com/laverdet/node-fibers)
-* _Instant redeployment of modules?_ (TODO)
-* _Client and server logging?_ (TODO)
-* _Module authentification?_ (TODO)
+* _Instant redeployment of modules?_
+* _Client and server logging?_
+* _Module authentification?_
 
 ### Documentation
 
@@ -49,4 +49,3 @@
 * [Meteor Load Test](https://github.com/alanning/meteor-load-test) _Load testing tool for Meteor applications, Adrian Lanning. Based on [load-testing-with-clojure](https://github.com/locopati/load-testing-with-clojure) by Andy Kriger which load-tests stateless websites. Uses [The Grinder](http://grinder.sourceforge.net) to manage agents and record performance metrics. Uses the [java-ddp-client](https://github.com/kenyee/java-ddp-client) by Ken Yee to communicate with the target Meteor server. Evolved from discussion on the meteor-talk google group: [Load Testing Meteor](https://groups.google.com/forum/#!topic/meteor-talk/M9waYvcFufs)._ Voir aussi l'intéressante définition de la terminologie de la performance dans cette page (transcrite dans notre [nomenclature](nomenclature)).
 * [How to connect meteor to an existing backend?](http://stackoverflow.com/questions/19893387/how-to-connect-meteor-to-an-existing-backend/19910190#19910190) Question sur StackOverflow #meteor, avec réponses qui suggèrent de partager instance MongoDB entre appui Clojure et Meteor
 * [Meteor js as front end, what use for backend?](http://stackoverflow.com/questions/14921576/meteor-js-as-front-end-what-use-for-backend) Quelques pistes à tracer
-
