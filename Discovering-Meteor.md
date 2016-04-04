@@ -23,7 +23,8 @@
 ### Documentation
 
 * [Meteor Documentation](http://docs.meteor.com)
-* [Learn Meteor](http://www.meteor.com/learn-meteor) liste des ressources recommandées_
+* [A study plan for Meteor](https://www.discovermeteor.com/blog/study-plan-meteor-1-3/) Sacha Greif, 01.04.2016
+* [Learn Meteor](http://www.meteor.com/learn-meteor) liste des ressources recommandées
 * [Discover Meteor Book](www.discovermeteor.com) ouvrage en ligne qui couvre l'apprentissage de Meteor
 * [Meteor Roadmap](https://trello.com/b/hjBDflxp/meteor-roadmap) tableau Trello, très intéressant; v1.0 prévue pour early 2014; [i18n](https://trello.com/c/FCIRLtdN/38-i18n) pour 1.1+ (y'a un [sondage](https://www.surveymonkey.com/s/MZZZPHW) en cours)
 * [Meteor Usermap](http://usermap.meteor.com)
